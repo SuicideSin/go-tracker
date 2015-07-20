@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GO Tracker</title>
+    <script src="lib/tracking-min.js"></script>
+    <script src="lib/hough-transform.js"></script>
+    <script src="lib/go-tracker.js"></script>
+    <style>
+      #video {
+        position: absolute;
+      }
+
+      #canvas {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video id="video" width="400" height="300" preload autoplay loop muted></video>
+      <canvas id="canvas" width="400" height="300"></canvas>
+    </div>
+
+    <script>
+      startTracking();
+    </script>
+  </body>
+</html>
